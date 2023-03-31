@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+<h1>Todo List</h1>
+<ul>
+    <% todos.forEach((todo) => { %>
+        <li><%= todo['text'] %></li>
+    <% }); %>
+</ul>
+<form method="POST">
+    <label for="todo">New Todo:</label>
+    <input type="text" id="todo" name="todo" required>
+    <button type="submit">Add Todo</button>
+</form>
+</body>
+</html>
